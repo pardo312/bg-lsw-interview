@@ -7,6 +7,11 @@ public class PlayerAnimatorController : MonoBehaviour
 {
     public Animator animator;
 
+    public void Start()
+    {
+        PlayerInputListener.Singleton.onMove += SetMovementAnimation;
+    }
+
     public void SetMovementAnimation(Vector2 newDirection)
     {
         animator.SetFloat("Horizontal", newDirection.x);

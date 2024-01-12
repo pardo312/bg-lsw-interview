@@ -2,8 +2,6 @@
     "name": "InputModule",
     "rootNamespace": "",
     "references": [
-        "GUID:c0754963a8548a243a681dd031d649c4",
-        "GUID:ec1521d9bb04f9e48ba74d5b293bf6f0",
         "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],

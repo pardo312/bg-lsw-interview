@@ -10,6 +10,12 @@ public class PlayerMovementController : MonoBehaviour
 
 
     #region ----Methods----
+
+    public void Start()
+    {
+        PlayerInputListener.Singleton.onMove += SetDirection;
+    }
+
     public void SetDirection(Vector2 newDirection)
     {
         direction = newDirection;
