@@ -44,7 +44,18 @@ public class PlayerInventoryVisualController : MonoBehaviour
 
     public void OpenInventory(bool isOpen)
     {
-        inventoryPanelParent.SetActive(isOpen);
+        if (isOpen)
+        {
+            inventoryPanelParent.transform.localScale = Vector3.one * 0.1f;
+            inventoryPanelParent.SetActive(true);
+            LeanTween.scale(inventoryPanelParent, Vector3.one, 0.3f).setEase(LeanTweenType.easeInOutBack);
+        }
+        else
+        {
+            LeanTween.scale(inventoryPanelParent, Vector3.one * 0.1f, 0.3f).setEase(LeanTweenType.easeInOutBack).setOnComplete(() =>
+                inventoryPanelParent.SetActive(false)
+            );
+        }
     }
 
     public void EnableAlternateButton(bool enableAlt)

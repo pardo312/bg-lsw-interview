@@ -1,8 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ItemsDatabase", menuName = "BlueGravity/ItemsDatabase", order = 1)]
+[Serializable, CreateAssetMenu(fileName = "ItemsDatabase", menuName = "BlueGravity/ItemsDatabase", order = 1)]
 public class ItemsDatabaseScriptableObject : ScriptableObject
 {
     [SerializeField] private List<ItemData> items = new List<ItemData>();
@@ -11,6 +12,11 @@ public class ItemsDatabaseScriptableObject : ScriptableObject
     public string search;
     private string previousSearch;
     public List<ItemData> searchBar = new List<ItemData>();
+
+    public void Awake()
+    {
+        itemsDictionary = items.ToDictionary(item => item.id, item => item);
+    }
 
     public void OnValidate()
     {

@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class PlayerAnimatorController : MonoBehaviour
@@ -14,7 +10,7 @@ public class PlayerAnimatorController : MonoBehaviour
         PlayerInputListener.Singleton.onMove += SetMovement;
     }
 
-    public void SetOutfit(AnimatorController animatorController)
+    public void SetOutfit(RuntimeAnimatorController animatorController)
     {
         outfitAnim.runtimeAnimatorController = animatorController;
     }

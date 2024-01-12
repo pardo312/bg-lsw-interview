@@ -54,6 +54,7 @@ public class PlayerInventoryController : MonoBehaviour
         bool disableUserClosingInventoryInShop = isOpen && !sellMode && playerInventoryVisualController.isSellMode;
         if (disableUserClosingInventoryInShop)
             return;
+        
         isOpen = !isOpen;
         playerInventoryVisualController.isSellMode = sellMode;
         playerInventoryVisualController.OpenInventory(isOpen);
