@@ -14,20 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - id: 0
-    name: Banana
-    price: 100
-    icon: {fileID: 21300000, guid: 06140cc248b05d2488fbb6493ce5fd11, type: 3}
-  - id: 1
-    name: Naranja
+    name: Outfit1
     price: 200
-    icon: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    icon: {fileID: 614041906, guid: b6e3a86af155def4aaa12a36c1b51356, type: 3}
+    animatorController: {fileID: 9100000, guid: 08022338e0c14e24faa59bb75314eff8, type: 2}
+  - id: 1
+    name: Outfit2
+    price: 200
+    icon: {fileID: 1681230279, guid: 53fc87f5309c4a84da8aabbe8bc8ecc2, type: 3}
+    animatorController: {fileID: 9100000, guid: deb078976122c014baa52e7052e77029, type: 2}
   - id: 2
     name: Naranja
     price: 200
     icon: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    animatorController: {fileID: 0}
+  - id: 3
+    name: Pera
+    price: 200
+    icon: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    animatorController: {fileID: 0}
   search: 
   searchBar:
   - id: 0
-    name: Banana
-    price: 100
-    icon: {fileID: 0}
+    name: Outfit2
+    price: 200
+    icon: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    animatorController: {fileID: 9100000, guid: 08022338e0c14e24faa59bb75314eff8, type: 2}
+  - id: 1
+    name: Outfit
+    price: 200
+    icon: {fileID: 1681230279, guid: 53fc87f5309c4a84da8aabbe8bc8ecc2, type: 3}
+    animatorController: {fileID: 9100000, guid: deb078976122c014baa52e7052e77029, type: 2}
+  - id: 2
+    name: Naranja
+    price: 200
+    icon: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    animatorController: {fileID: 0}
+  - id: 3
+    name: Pera
+    price: 200
+    icon: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    animatorController: {fileID: 0}

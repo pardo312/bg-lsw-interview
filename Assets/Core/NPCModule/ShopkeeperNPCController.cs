@@ -30,6 +30,7 @@ public class ShopkeeperNPCController : MonoBehaviour
     {
         if (!insideTrigger)
             return;
+
         openShop?.Invoke();
     }
 }
