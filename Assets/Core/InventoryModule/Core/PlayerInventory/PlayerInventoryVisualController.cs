@@ -48,11 +48,11 @@ public class PlayerInventoryVisualController : MonoBehaviour
         {
             inventoryPanelParent.transform.localScale = Vector3.one * 0.1f;
             inventoryPanelParent.SetActive(true);
-            LeanTween.scale(inventoryPanelParent, Vector3.one, 0.3f).setEase(LeanTweenType.easeInOutBack);
+            LeanTween.scale(inventoryPanelParent, Vector3.one, 0.3f).setEase(LeanTweenType.easeOutBack);
         }
         else
         {
-            LeanTween.scale(inventoryPanelParent, Vector3.one * 0.1f, 0.3f).setEase(LeanTweenType.easeInOutBack).setOnComplete(() =>
+            LeanTween.scale(inventoryPanelParent, Vector3.one * 0.1f, 0.3f).setEase(LeanTweenType.easeOutBack).setOnComplete(() =>
                 inventoryPanelParent.SetActive(false)
             );
         }
